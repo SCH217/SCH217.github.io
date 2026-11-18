@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="한의학, Apple 플랫폼, 학습도구, 개인 금융과 검증 시스템을 연결해 제품으로 만드는 손창현의 포트폴리오입니다.">
+  <meta name="author" content="손창현">
+  <link rel="canonical" href="https://sch217.github.io/">
+  <meta property="og:url" content="https://sch217.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:title" content="손창현 — Product Builder">
+  <meta property="og:description" content="한의학을 공부하고, 제품을 설계하고, 리스크를 다룹니다.">
+  <title>손창현 — Product Builder</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600;700&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- shortcut: JS가 꺼지면 항상 어두운 테마, 필요해지면 prefers-color-scheme 토큰 블록을 CSS에 추가 -->
+  <script>try{var t=localStorage.getItem("sch-theme")}catch(e){}document.documentElement.dataset.theme=t==="dark"||t==="light"?t:matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+
+  <div class="page-shell" id="top">
+    <header class="intro-panel">
+      <div class="mobile-header">
+        <a class="mobile-brand" href="#top" aria-label="SCH 처음으로">SCH</a>
+        <span class="mobile-section" data-mobile-section>소개</span>
+        <button class="icon-button" type="button" data-theme-toggle aria-label="밝은 테마로 전환">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="3.5"></circle>
+            <path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 15.2A8 8 0 0 1 8.8 4 8.2 8.2 0 1 0 20 15.2Z"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="intro-inner">
+        <div class="intro-copy">
+          <a class="monogram" href="#top" aria-label="손창현 포트폴리오 처음으로">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M10 8h28v32H10z"></path>
+              <path d="M17 17h14M17 24h10M17 31h14"></path>
+            </svg>
+          </a>
+          <h1 id="site-title">손창현</h1>
+          <p class="intro-role">한의과대학 학생 · Product Builder</p>
+          <p class="intro-thesis">한의학을 공부하고,<br>제품을 설계하고,<br>리스크를 다룹니다.</p>
+          <p class="intro-summary">
+            반복해서 겪는 불편을 iPhone, Apple Watch, iPad와 로컬 시스템으로 해결합니다.
+            기능뿐 아니라 실패 조건과 검증 증거까지 제품으로 만듭니다.
+          </p>
+        </div>
+
+        <nav class="section-nav" aria-label="페이지 섹션">
+          <a href="#about" data-nav="about" aria-current="true">
+            <span class="nav-line" aria-hidden="true"></span><span>소개</span>
+          </a>
+          <a href="#work" data-nav="work">
+            <span class="nav-line" aria-hidden="true"></span><span>대표 작업</span>
+          </a>
+          <a href="#credentials" data-nav="credentials">
+            <span class="nav-line" aria-hidden="true"></span><span>학력·자격</span>
+          </a>
+          <a href="#archive" data-nav="archive">
+            <span class="nav-line" aria-hidden="true"></span><span>전체 작업</span>
+          </a>
+          <a href="#contact" data-nav="contact">
+            <span class="nav-line" aria-hidden="true"></span><span>연락</span>
+          </a>
+        </nav>
+
+        <div class="intro-footer">
+          <div class="public-links" aria-label="공개 링크">
+            <a href="https://github.com/SCH217" target="_blank" rel="noreferrer" aria-label="GitHub 프로필 열기">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.88c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.57 9.57 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.9-1.29 2.74-1.02 2.74-1.02.56 1.37.21 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"></path>
+              </svg>
+            </a>
+            <a href="https://dongui-madang-31.thsckdgus217.chatgpt.site" target="_blank" rel="noreferrer" aria-label="동의마당 공개 사이트 열기">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13 5h6v6M19 5l-9 9"></path><path d="M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path>
+              </svg>
+            </a>
+          </div>
+          <button class="theme-control" type="button" data-theme-toggle aria-label="밝은 테마로 전환">
+            <span>테마</span>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="3.5"></circle>
+              <path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"></path>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 15.2A8 8 0 0 1 8.8 4 8.2 8.2 0 1 0 20 15.2Z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="content" id="main-content">
+      <section class="content-section about-section" id="about" data-section="소개" aria-labelledby="about-title">
+        <h2 id="about-title">소개</h2>
+        <div class="prose prose-lead">
+          <p>
+            저는 <strong>대구한의대학교 한의과대학 본과 1학년</strong>으로,
+            의료 도메인을 공부하면서 직접 겪는 문제를 소프트웨어로 해결하고 있습니다.
+            운동 기록의 단절, PDF 학습과 복습의 분리, 시장 정보 과잉처럼 반복되는 마찰을 발견하면
+            실제로 쓸 수 있는 시스템으로 바꿉니다.
+          </p>
+          <p>
+            작업 범위는 화면 구현에 그치지 않습니다. 로컬 우선 데이터 구조, 실패 시 동작,
+            마이그레이션, 실기기 검증, TestFlight 제출, 재현 가능한 증거 패키지까지
+            제품의 일부로 설계합니다.
+          </p>
+          <p>
+            장기적으로는 한의사 면허를 전문성의 기반으로 삼되,
+            <strong>헬스케어 제품과 회사를 만드는 사업가</strong>를 목표로 합니다.
+            개발과 투자는 그 목표를 실행하고 리스크를 통제하기 위한 도구입니다.
+          </p>
+        </div>
+
+        <dl class="fact-list" aria-label="핵심 프로필">
+          <div><dt>현재</dt><dd>대구한의대학교 한의과대학 본과 1학년</dd></div>
+          <div><dt>만드는 것</dt><dd>Pendeck(펜덱) · iPad PDF 필기·플래시카드 앱</dd></div>
+          <div><dt>자격</dt><dd>금융투자분석사 · 투자자산운용사</dd></div>
+          <div><dt>주요 플랫폼</dt><dd>iOS · watchOS · iPadOS · Web · Local systems</dd></div>
+          <div><dt>작업 원칙</dt><dd>Local-first · fail-closed · evidence-first</dd></div>
+        </dl>
+
+        <ul class="principle-list" aria-label="제품 개발 원칙">
+          <li>문제를 직접 겪은 장면에서 시작합니다.</li>
+          <li>안전·개인정보·데이터 경계를 기능보다 먼저 고정합니다.</li>
+          <li>자동 테스트와 실제 기기 증거를 구분해 남깁니다.</li>
+          <li>완성도를 높이되 제품 상태를 과장하지 않습니다.</li>
+        </ul>
+      </section>
+
+      <section class="content-section work-section" id="work" data-section="대표 작업" aria-labelledby="work-title">
+        <div class="section-header">
+          <h2 id="work-title">대표 작업</h2>
+          <a class="section-link" href="#archive">전체 20개 작업 보기
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg>
+          </a>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card">
+            <figure class="project-media">
+              <img src="assets/pendeck-preview.svg" width="1200" height="720" alt="PDF에 가린 영역을 복습 카드로 바꾸는 Pendeck 학습 흐름 개념도">
+              <figcaption>학습 흐름 개념도 · 실제 앱 화면 캡처가 아닙니다.</figcaption>
+            </figure>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>Pendeck</h3>
+                <span class="project-state"><span aria-hidden="true"></span>TestFlight · 출시 준비 중</span>
+              </div>
+              <p class="project-summary">
+                공부하다 바로 플래시카드 만들기. iPad에서 PDF에 필기하다 그 자리에서 가림 카드를 만들고,
+                복습하고, 원문으로 돌아가는 학습 앱입니다.
+              </p>
+              <p>
+                PDFKit 위에 PencilKit 잉크와 마스크를 결합하고, 모든 표시와 카드를 안정적인 UUID로 추적합니다.
+                무거운 PDF·그림 데이터와 가벼운 메타데이터를 분리해 로컬 우선과 복구 가능성을 지킵니다.
+                계정 없이 오프라인으로 동작하고, 데이터는 iPad 안에 둡니다.
+              </p>
+              <ul class="evidence-list" aria-label="Pendeck 근거">
+                <li>PDF → 표시 → 카드 → 복습의 단일 루프</li>
+                <li>Stable ID · versioned schema · heavy/light split</li>
+                <li>Apple Pencil · text selection · in-app review</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://changyoungduo.github.io/pendeck/" target="_blank" rel="noreferrer">
+                  지원 페이지 열기
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16 16 4M8 4h8v8"></path></svg>
+                </a>
+              </div>
+              <ul class="tech-list" aria-label="Pendeck 기술"><li>SwiftUI</li><li>PDFKit</li><li>PencilKit</li><li>SwiftData</li><li>SM-2</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-media">
+              <img src="assets/myolog-preview.svg" width="1200" height="720" loading="lazy" decoding="async" alt="운동 세트 기록과 Apple Watch 심박 휴식을 함께 보여 주는 Myolog 기능 개념도">
+              <figcaption>기능 개념도 · 실제 앱 화면 캡처가 아닙니다.</figcaption>
+            </figure>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>Myolog</h3>
+                <span class="project-state"><span aria-hidden="true"></span>TestFlight 제출</span>
+              </div>
+              <p class="project-summary">
+                머신이 바뀌어도 수행 기록을 이어 주고, Apple Watch 심박으로 다음 세트 타이밍을 안내하는
+                중급자용 웨이트 기록 앱입니다.
+              </p>
+              <p>
+                실제 머신·제품 라인·헬스장 인스턴스를 구분하고, 과거 수행과 사용자 보정을 근거로
+                보수적인 시작 범위를 제시합니다. 계정과 자체 백엔드 없이 로컬 데이터를 우선합니다.
+              </p>
+              <ul class="evidence-list" aria-label="Myolog 근거">
+                <li>24개 브랜드 · 81개 제품 라인</li>
+                <li>169개 운동 · 709개 머신</li>
+                <li>iPhone · Apple Watch · Smart Pace</li>
+              </ul>
+              <ul class="tech-list" aria-label="Myolog 기술"><li>SwiftUI</li><li>SwiftData</li><li>HealthKit</li><li>WatchConnectivity</li><li>XCTest</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-media">
+              <img src="assets/mia-preview.svg" width="1200" height="720" loading="lazy" decoding="async" alt="시장 데이터 원천, 신선도 게이트와 일일 브리프를 연결한 Market Intel Agent 운영 개념도">
+              <figcaption>운영 개념도 · 실제 서비스 화면 캡처가 아닙니다.</figcaption>
+            </figure>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>Market Intel Agent</h3>
+                <span class="project-state"><span aria-hidden="true"></span>검증 중 · 비공개</span>
+              </div>
+              <p class="project-summary">
+                미국 시장 데이터를 공식·무료 원천에서 수집하고,
+                출처와 신선도, 불확실성을 보존한 한국어 브리프로 구조화합니다.
+              </p>
+              <p>
+                숫자를 모델이 만들지 않으며, 투자 조언처럼 읽히는 출력은 전송 전에 차단합니다.
+                중복 전송, 사실 정정, 원천 누락과 degraded 상태를 명시적으로 관리합니다.
+              </p>
+              <ul class="evidence-list" aria-label="Market Intel Agent 근거">
+                <li>공식 원천 중심 수집과 SQLite 증거 보존</li>
+                <li>freshness · provenance · guardrail gate</li>
+                <li>idempotent delivery · correction chain</li>
+              </ul>
+              <ul class="tech-list" aria-label="Market Intel Agent 기술"><li>Python</li><li>SQLite</li><li>Telegram</li><li>Deterministic pipeline</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-media">
+              <img src="assets/frm-preview.svg" width="1200" height="720" loading="lazy" decoding="async" alt="집중도, 유동성, 스트레스와 미평가 영역을 보여 주는 FRM Workbench 리스크 보고 개념도">
+              <figcaption>리스크 보고 개념도 · 실제 개인 포트폴리오 데이터가 아닙니다.</figcaption>
+            </figure>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>FRM Workbench</h3>
+                <span class="project-state"><span aria-hidden="true"></span>로컬 도구 · 비공개</span>
+              </div>
+              <p class="project-summary">
+                수익률을 예측하거나 매매를 지시하지 않고,
+                포트폴리오 리스크를 구조화하는 로컬 의사결정 지원 도구입니다.
+              </p>
+              <p>
+                스트레스, 집중도, 유동성, 한도와 모델 위험을 명시적 방법론으로 계산하며,
+                입력이 부족한 영역은 추정으로 채우지 않고 미평가 상태로 남깁니다.
+              </p>
+              <ul class="evidence-list" aria-label="FRM Workbench 근거">
+                <li>명시적 데이터 게이트와 방법론</li>
+                <li>결정론적 증거 패키지와 재수행 검증</li>
+                <li>불완전 입력에 대한 fail-closed 처리</li>
+              </ul>
+              <ul class="tech-list" aria-label="FRM Workbench 기술"><li>Python</li><li>Risk methods</li><li>Deterministic evidence</li><li>Local web</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-media">
+              <img src="assets/reprofix-preview.svg" width="1200" height="720" loading="lazy" decoding="async" alt="버그 보고에서 회귀 테스트, 최소 수정과 독립 리뷰까지 연결하는 ReproFix 제어면 개념도">
+              <figcaption>제어면 개념도 · 실제 고객 실행 데이터가 아닙니다.</figcaption>
+            </figure>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>ReproFix</h3>
+                <span class="project-state"><span aria-hidden="true"></span>개발 중 · 비공개</span>
+              </div>
+              <p class="project-summary">
+                버그를 바로 고치는 대신, 먼저 실패를 증명하고 수정 증거를 동결하는
+                iOS 결함 수리 제어면입니다.
+              </p>
+              <p>
+                정확한 base SHA에서 새 회귀 테스트로 보고 관련 실패를 재현하고,
+                최소 수정과 독립 리뷰를 거쳐 Draft PR 또는 로컬 patch bundle만 만듭니다.
+                병합·배포·TestFlight 제출은 수행하지 않습니다.
+              </p>
+              <ul class="evidence-list" aria-label="ReproFix 근거">
+                <li>exact base SHA lease와 frozen regression test</li>
+                <li>deterministic policy · independent review</li>
+                <li>Draft PR 또는 patch bundle로만 종료</li>
+              </ul>
+              <ul class="tech-list" aria-label="ReproFix 기술"><li>Next.js</li><li>Node.js</li><li>PostgreSQL</li><li>GitHub App</li><li>Xcode worker</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card project-card-public">
+            <figure class="project-media">
+              <img src="assets/madang-preview.svg" width="1200" height="720" loading="lazy" decoding="async" alt="태극, 공연 사진과 프로그램 챕터를 연결한 동의마당 공연 사이트 경험 개념도">
+              <figcaption>경험 개념도 · 공개 사이트의 구조를 요약했습니다.</figcaption>
+            </figure>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>동의마당 공연 사이트</h3>
+                <span class="project-state"><span aria-hidden="true"></span>공개</span>
+              </div>
+              <p class="project-summary">
+                인쇄 팸플렛의 공연 설명과 사진을 모바일 중심의 스크롤 스토리로 재구성한 공개 웹사이트입니다.
+              </p>
+              <p>
+                Astro 정적 빌드, GSAP 모션, PDF 자산 최적화, Playwright·axe 회귀검증을 결합했습니다.
+                JavaScript가 실패하거나 모션을 줄여도 전체 콘텐츠와 조작 순서가 유지됩니다.
+              </p>
+              <ul class="evidence-list" aria-label="동의마당 공연 사이트 근거">
+                <li>Chromium·WebKit 44개 회귀 검사</li>
+                <li>모션 감소 · 200% 텍스트 · 다중 뷰포트 검증</li>
+                <li>PDF provenance와 AVIF·WebP 최적화</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://dongui-madang-31.thsckdgus217.chatgpt.site" target="_blank" rel="noreferrer">
+                  공개 사이트 열기
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16 16 4M8 4h8v8"></path></svg>
+                </a>
+              </div>
+              <ul class="tech-list" aria-label="동의마당 공연 사이트 기술"><li>Astro</li><li>TypeScript</li><li>GSAP</li><li>Playwright</li><li>axe-core</li></ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section credentials-section" id="credentials" data-section="학력·자격" aria-labelledby="credentials-title">
+        <h2 id="credentials-title">학력·자격</h2>
+        <p class="section-intro">
+          서로 다른 훈련을 하나의 판단 체계로 사용합니다.
+          의료 도메인은 안전 경계를, 금융 자격은 불확실성과 리스크 통제를,
+          제품 개발은 실제 전달 능력을 강화합니다.
+        </p>
+
+        <div class="credential-list">
+          <article class="credential-item">
+            <div class="credential-period">현재</div>
+            <div>
+              <h3>대구한의대학교 한의과대학</h3>
+              <p>본과 1학년 재학. 의료 지식과 실제 학습·진료 맥락을 제품 판단의 기반으로 사용합니다.</p>
+            </div>
+          </article>
+          <article class="credential-item">
+            <div class="credential-period">자격</div>
+            <div>
+              <h3>금융투자분석사</h3>
+              <p>시장과 기업을 구조적으로 해석하고, 투자 판단의 가정과 한계를 구분하는 분석 기반입니다.</p>
+            </div>
+          </article>
+          <article class="credential-item">
+            <div class="credential-period">자격</div>
+            <div>
+              <h3>투자자산운용사</h3>
+              <p>운용, 상품, 규제와 위험관리의 실무 지식을 개인 금융 시스템 설계에 적용합니다.</p>
+            </div>
+          </article>
+          <article class="credential-item">
+            <div class="credential-period">제품</div>
+            <div>
+              <h3>Apple Developer Program</h3>
+              <p>iPhone·Apple Watch 제품의 서명, archive, App Store Connect, 내부·외부 TestFlight 흐름을 직접 운영했습니다.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="capability-block">
+          <h3>실제로 연결해 본 기술 범위</h3>
+          <dl>
+            <div><dt>Apple products</dt><dd>Swift · SwiftUI · SwiftData · watchOS · HealthKit · WatchConnectivity</dd></div>
+            <div><dt>Study &amp; vision</dt><dd>PDFKit · PencilKit · Vision · AVFoundation · local-first persistence</dd></div>
+            <div><dt>Web &amp; services</dt><dd>TypeScript · Next.js · Astro · React · FastAPI · semantic HTML/CSS</dd></div>
+            <div><dt>Data &amp; risk</dt><dd>Python · SQLite · PostgreSQL · source lineage · deterministic methods</dd></div>
+            <div><dt>Verification</dt><dd>XCTest · Playwright · axe-core · migrations · physical-device evidence · TestFlight</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="content-section archive-section" id="archive" data-section="전체 작업" aria-labelledby="archive-title">
+        <div class="section-header archive-header">
+          <div>
+            <h2 id="archive-title">전체 작업</h2>
+            <p>대표작, 실험, 공개 프로젝트와 보존된 시스템을 같은 기준으로 표시합니다.</p>
+          </div>
+          <p class="archive-count" aria-live="polite"><span data-visible-count>20</span>개</p>
+        </div>
+
+        <div class="archive-filters" role="group" aria-label="작업 분야 필터">
+          <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">전체</button>
+          <button type="button" class="filter-button" data-filter="health" aria-pressed="false">건강</button>
+          <button type="button" class="filter-button" data-filter="learning" aria-pressed="false">학습</button>
+          <button type="button" class="filter-button" data-filter="finance" aria-pressed="false">금융</button>
+          <button type="button" class="filter-button" data-filter="web" aria-pressed="false">웹</button>
+          <button type="button" class="filter-button" data-filter="tools" aria-pressed="false">도구</button>
+        </div>
+
+        <div class="archive-list" data-project-archive>
+          <details class="archive-item" data-category="health apple">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Myolog</span><span class="archive-focus">웨이트 기록 · iPhone/Watch</span><span class="archive-state">TestFlight 제출</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>머신별 연속성과 Apple Watch 심박 기반 휴식을 결합한 중급자용 운동 기록 앱.</p><ul><li>SwiftUI</li><li>SwiftData</li><li>HealthKit</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="learning apple">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Pendeck</span><span class="archive-focus">PDF 필기·플래시카드 · iPadOS</span><span class="archive-state">출시 준비 중</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>PDF 공부, 필기·마스크, 카드 생성과 복습을 하나의 로컬 우선 루프로 연결합니다.</p><ul><li>PDFKit</li><li>PencilKit</li><li>SwiftData</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="health web">
+            <summary><span class="archive-year">2026</span><span class="archive-name">BodyMap</span><span class="archive-focus">비진단 증상 탐색</span><span class="archive-state">프로토타입</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>결정론적 red-flag gate와 구조화 지식베이스를 사용하는 증상 감별지원 도구.</p><ul><li>Next.js</li><li>TypeScript</li><li>Clinical rules</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="health apple">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Prelog</span><span class="archive-focus">신체 변화 관찰 · iOS</span><span class="archive-state">공모전 MVP</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>온디바이스 영상과 생활 기록으로 비의료 신체 변화 신호를 개인 기준선과 비교합니다.</p><ul><li>Swift</li><li>Vision</li><li>AVFoundation</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="health tools">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Prelog Commercial</span><span class="archive-focus">사업화·제품 경계</span><span class="archive-state">비공개 트랙</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>Prelog의 사업화, 검증 범위와 공개 제품 경계를 독립적으로 다루는 비공개 트랙.</p><ul><li>Product strategy</li><li>Validation</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="finance tools">
+            <summary><span class="archive-year">2026</span><span class="archive-name">FRM Workbench</span><span class="archive-focus">포트폴리오 리스크</span><span class="archive-state">로컬 도구</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>스트레스, 집중도, 유동성, 한도와 모델 위험을 구조화하는 의사결정 지원 도구.</p><ul><li>Python</li><li>Risk methods</li><li>Evidence package</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="finance tools">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Market Intel Agent</span><span class="archive-focus">시장 정보 브리프</span><span class="archive-state">검증 중</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>출처와 신선도를 보존하면서 미국 시장 정보를 수집·구조화·전달합니다.</p><ul><li>Python</li><li>SQLite</li><li>Guardrails</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="finance tools">
+            <summary><span class="archive-year">2026</span><span class="archive-name">QuantLab</span><span class="archive-focus">Regime · 추세 · PWA</span><span class="archive-state">동결 시스템</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>개인 포트폴리오의 비중, 추세, 상대강도와 regime 행동 규칙을 계산합니다. 자동매매는 하지 않습니다.</p><ul><li>Python</li><li>React</li><li>PWA</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="finance tools">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Personal Investment Tool</span><span class="archive-focus">FRM·MIA·Quant 통합</span><span class="archive-state">보존</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>세 시스템을 검증 가능한 packet 경계로 연결하고 합성 입력 PWA와 불변 증거 이력을 구현한 통합 허브.</p><ul><li>Python</li><li>React</li><li>Integrity kernel</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="learning tools">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Anatomy Agent</span><span class="archive-focus">교재 재구성 자동화</span><span class="archive-state">개발 중</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>스캔 해부학 PDF를 구조화된 A4 학습교재로 재구성하고 자동 검수하는 파이프라인.</p><ul><li>Python</li><li>PDF</li><li>Playwright</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="learning web">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Limbicue</span><span class="archive-focus">간격 반복 엔진</span><span class="archive-state">비공개</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>FSRS 기반 간격 반복 플래시카드 엔진. 학습 흐름 일부는 Pendeck으로 이어졌습니다.</p><ul><li>TypeScript</li><li>FSRS</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="learning web">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Herb Exam</span><span class="archive-focus">본초 감별 학습</span><span class="archive-state">공개</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>약재 사진 감별 시험을 위한 정적 학습 웹앱과 로컬 진도·백업 흐름.</p><ul><li>Static web</li><li>localStorage</li></ul><a href="https://github.com/SCH217/herb_exam" target="_blank" rel="noreferrer">GitHub 열기</a></div>
+          </details>
+          <details class="archive-item" data-category="learning apple tools">
+            <summary><span class="archive-year">2026</span><span class="archive-name">GNC2</span><span class="archive-focus">iPadOS 검증 작업공간</span><span class="archive-state">비공개</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>교육용 iPadOS 인터페이스를 명세와 동작 증거를 기준으로 검증하는 작업공간.</p><ul><li>Swift</li><li>Validation</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="web">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Dongui Madang</span><span class="archive-focus">공연 스크롤 스토리</span><span class="archive-state">공개</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>풍물 공연 팸플렛을 반응형 스크롤 스토리와 접근 가능한 공개 사이트로 전환했습니다.</p><ul><li>Astro</li><li>GSAP</li><li>Playwright</li></ul><a href="https://dongui-madang-31.thsckdgus217.chatgpt.site" target="_blank" rel="noreferrer">공개 사이트 열기</a></div>
+          </details>
+          <details class="archive-item" data-category="health web">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Myolog Legal</span><span class="archive-focus">개인정보·지원 문서</span><span class="archive-state">공개</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>Myolog의 개인정보 처리방침과 공개 지원 문서를 제품 소스와 분리한 저장소.</p><ul><li>Policy</li><li>Support</li></ul><a href="https://github.com/SCH217/myolog-legal" target="_blank" rel="noreferrer">GitHub 열기</a></div>
+          </details>
+          <details class="archive-item" data-category="tools">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Pickup Optimizer</span><span class="archive-focus">멀티모달 픽업 최적화</span><span class="archive-state">MVP</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>운전자 부담, 승객 편의, 도착시간과 형평성을 함께 평가해 Top 3 픽업안을 제시합니다.</p><ul><li>Python</li><li>FastAPI</li><li>Optimization</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="tools">
+            <summary><span class="archive-year">2026</span><span class="archive-name">ReproFix</span><span class="archive-focus">iOS 결함 수리 제어면</span><span class="archive-state">개발 중</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>회귀 테스트로 실패를 증명하고 최소 수정과 독립 리뷰를 증거로 묶습니다.</p><ul><li>Next.js</li><li>Node.js</li><li>Xcode</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="tools">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Risewell Cleanroom</span><span class="archive-focus">알람 앱 독립 재구성</span><span class="archive-state">검증 프로토타입</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>알람과 기상 과제를 결합한 iOS 앱을 관찰→명세→SwiftUI 구현→테스트 순서로 독립 재구성했습니다.</p><ul><li>SwiftUI</li><li>Clean-room</li><li>Validation</li></ul></div>
+          </details>
+          <details class="archive-item" data-category="learning web">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Yakkseongga</span><span class="archive-focus">한의학 학습 실험</span><span class="archive-state">초기 공개</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>한의학 학습 콘텐츠를 위한 공개 실험 저장소. 현재 초기 상태입니다.</p><ul><li>Learning</li><li>Public repository</li></ul><a href="https://github.com/SCH217/yakkseongga" target="_blank" rel="noreferrer">GitHub 열기</a></div>
+          </details>
+          <details class="archive-item" data-category="web tools">
+            <summary><span class="archive-year">2026</span><span class="archive-name">Personal Website</span><span class="archive-focus">개인 소개·작업 기록</span><span class="archive-state">현재</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg></summary>
+            <div class="archive-detail"><p>학력, 자격, 대표 시스템과 전체 작업을 하나의 읽기 쉬운 공개 포트폴리오로 구성한 이 사이트.</p><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+          </details>
+        </div>
+      </section>
+
+      <section class="content-section contact-section" id="contact" data-section="연락" aria-labelledby="contact-title">
+        <h2 id="contact-title">연락</h2>
+        <p class="contact-lead">
+          의료·학습·운동·개인 금융처럼 도메인 이해와 제품 구현이 함께 필요한 문제라면,
+          작업의 상태와 한계를 숨기지 않는 방식으로 같이 만들고 싶습니다.
+        </p>
+        <a class="contact-link" href="https://github.com/SCH217" target="_blank" rel="noreferrer">
+          GitHub에서 작업과 연결하기
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg>
+        </a>
+      </section>
+
+      <footer class="site-footer">
+        <p><strong>손창현 / Changhyeon Son</strong><span>한의과대학 학생 · 독립 제품 빌더</span></p>
+        <p>© <span data-current-year>2026</span> · 사실과 상태를 과장하지 않는 포트폴리오</p>
+      </footer>
+    </main>
+  </div>
+
+  <noscript>
+    <p class="noscript-note">JavaScript가 꺼져 있어도 모든 내용은 읽을 수 있습니다. 분야 필터, 현재 섹션 표시와 테마 저장만 사용할 수 없습니다.</p>
+  </noscript>
+</body>
+</html>

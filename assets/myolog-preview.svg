@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Myolog feature schematic</title>
+  <desc id="desc">An illustrative iPhone workout log beside an Apple Watch heart-rate rest timer.</desc>
+  <rect width="1200" height="720" rx="36" fill="#081321"/>
+  <circle cx="1090" cy="100" r="180" fill="#10263d" opacity=".7"/>
+  <circle cx="1080" cy="620" r="260" fill="#0b2a31" opacity=".72"/>
+
+  <g transform="translate(116 64)">
+    <rect x="0" y="0" width="348" height="590" rx="46" fill="#02070c" stroke="#26384b" stroke-width="3"/>
+    <rect x="16" y="16" width="316" height="558" rx="34" fill="#0d1a29"/>
+    <rect x="124" y="29" width="100" height="20" rx="10" fill="#02070c"/>
+    <text x="36" y="90" fill="#ecf4ff" font-family="Arial, sans-serif" font-size="26" font-weight="700">MYOLOG</text>
+    <text x="36" y="124" fill="#7890a9" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">PUSH / CHEST</text>
+
+    <rect x="34" y="154" width="280" height="92" rx="18" fill="#14263a"/>
+    <text x="54" y="184" fill="#60e4c3" font-family="Arial, sans-serif" font-size="13" font-weight="700">MACHINE CONTINUITY</text>
+    <text x="54" y="216" fill="#edf5ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">Chest Press · 85 kg</text>
+    <text x="54" y="237" fill="#8fa4ba" font-family="Arial, sans-serif" font-size="13">Previous session · same setup</text>
+
+    <text x="36" y="286" fill="#7890a9" font-family="Arial, sans-serif" font-size="13" letter-spacing="2">WORK SETS</text>
+    <g font-family="Arial, sans-serif">
+      <rect x="34" y="306" width="280" height="54" rx="14" fill="#102033"/>
+      <text x="54" y="340" fill="#a8bad0" font-size="14">01</text><text x="106" y="340" fill="#edf5ff" font-size="17" font-weight="700">85 kg × 8</text><text x="266" y="340" fill="#60e4c3" font-size="13">DONE</text>
+      <rect x="34" y="370" width="280" height="54" rx="14" fill="#102033"/>
+      <text x="54" y="404" fill="#a8bad0" font-size="14">02</text><text x="106" y="404" fill="#edf5ff" font-size="17" font-weight="700">85 kg × 8</text><text x="266" y="404" fill="#60e4c3" font-size="13">DONE</text>
+      <rect x="34" y="434" width="280" height="54" rx="14" fill="#16304a" stroke="#60e4c3" stroke-width="2"/>
+      <text x="54" y="468" fill="#a8bad0" font-size="14">03</text><text x="106" y="468" fill="#edf5ff" font-size="17" font-weight="700">85 kg × 8</text><text x="260" y="468" fill="#60e4c3" font-size="13">NEXT</text>
+    </g>
+    <rect x="34" y="516" width="280" height="40" rx="20" fill="#60e4c3"/>
+    <text x="174" y="541" fill="#05221c" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">START SET</text>
+  </g>
+
+  <g transform="translate(560 118)">
+    <rect x="122" y="0" width="208" height="86" rx="42" fill="#18283a"/>
+    <rect x="122" y="416" width="208" height="86" rx="42" fill="#18283a"/>
+    <rect x="58" y="54" width="336" height="396" rx="82" fill="#02070c" stroke="#2d4358" stroke-width="3"/>
+    <rect x="76" y="72" width="300" height="360" rx="66" fill="#0d1a29"/>
+    <text x="226" y="120" fill="#8fa4ba" font-family="Arial, sans-serif" font-size="13" letter-spacing="2" text-anchor="middle">SMART PACE</text>
+    <circle cx="226" cy="236" r="92" fill="none" stroke="#1b3349" stroke-width="16"/>
+    <path d="M226 144a92 92 0 1 1-79 139" fill="none" stroke="#60e4c3" stroke-width="16" stroke-linecap="round"/>
+    <text x="226" y="225" fill="#edf5ff" font-family="Arial, sans-serif" font-size="58" font-weight="700" text-anchor="middle">118</text>
+    <text x="226" y="252" fill="#8fa4ba" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">BPM</text>
+    <text x="226" y="292" fill="#60e4c3" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">RECOVERING</text>
+    <line x1="126" y1="326" x2="326" y2="326" stroke="#243a50"/>
+    <text x="126" y="357" fill="#8fa4ba" font-family="Arial, sans-serif" font-size="14">MINIMUM REST</text>
+    <text x="326" y="357" fill="#edf5ff" font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="end">01:12</text>
+    <text x="126" y="389" fill="#8fa4ba" font-family="Arial, sans-serif" font-size="14">RECOVERY</text>
+    <text x="326" y="389" fill="#edf5ff" font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="end">72%</text>
+  </g>
+
+  <g transform="translate(980 502)" font-family="Arial, sans-serif">
+    <circle cx="0" cy="0" r="8" fill="#60e4c3"/>
+    <text x="20" y="5" fill="#a8bad0" font-size="14">iPhone + Apple Watch</text>
+    <text x="20" y="30" fill="#667f98" font-size="12">Illustrative product schematic</text>
+  </g>
+</svg>

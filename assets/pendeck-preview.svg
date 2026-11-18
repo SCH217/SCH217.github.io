@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Pendeck learning-loop schematic</title>
+  <desc id="desc">An iPad study canvas turns a marked PDF region into a review card while preserving its source.</desc>
+  <rect width="1200" height="720" rx="36" fill="#0b1424"/>
+  <circle cx="1060" cy="124" r="220" fill="#282058" opacity=".55"/>
+  <circle cx="160" cy="670" r="260" fill="#12343b" opacity=".42"/>
+
+  <g transform="translate(74 72)">
+    <rect width="710" height="528" rx="34" fill="#02060c" stroke="#31425b" stroke-width="3"/>
+    <rect x="22" y="22" width="666" height="484" rx="22" fill="#e8edf2"/>
+    <circle cx="355" cy="11" r="4" fill="#2b3f54"/>
+
+    <rect x="48" y="50" width="82" height="428" rx="12" fill="#d5dde5"/>
+    <rect x="64" y="72" width="50" height="68" rx="5" fill="#f7f9fb" stroke="#aebac6"/>
+    <rect x="64" y="154" width="50" height="68" rx="5" fill="#f7f9fb" stroke="#aebac6"/>
+    <rect x="64" y="236" width="50" height="68" rx="5" fill="#f7f9fb" stroke="#6b63dd" stroke-width="3"/>
+    <rect x="64" y="318" width="50" height="68" rx="5" fill="#f7f9fb" stroke="#aebac6"/>
+    <rect x="64" y="400" width="50" height="54" rx="5" fill="#f7f9fb" stroke="#aebac6"/>
+
+    <rect x="152" y="50" width="424" height="428" rx="12" fill="#ffffff"/>
+    <text x="184" y="94" fill="#111827" font-family="Arial, sans-serif" font-size="18" font-weight="700">Pathology · Chapter 04</text>
+    <text x="184" y="124" fill="#64748b" font-family="Arial, sans-serif" font-size="12">Inflammation and tissue response</text>
+    <line x1="184" y1="150" x2="540" y2="150" stroke="#d7dee7"/>
+    <g stroke="#cbd5e1" stroke-width="8" stroke-linecap="round">
+      <line x1="184" y1="184" x2="518" y2="184"/>
+      <line x1="184" y1="210" x2="492" y2="210"/>
+      <line x1="184" y1="236" x2="532" y2="236"/>
+      <line x1="184" y1="262" x2="462" y2="262"/>
+      <line x1="184" y1="326" x2="522" y2="326"/>
+      <line x1="184" y1="352" x2="488" y2="352"/>
+      <line x1="184" y1="378" x2="520" y2="378"/>
+      <line x1="184" y1="404" x2="446" y2="404"/>
+    </g>
+    <rect x="176" y="246" width="304" height="42" rx="8" fill="#d8d3ff" opacity=".85"/>
+    <path d="M190 273c58-18 128-18 205 0 33 8 60 9 82 2" fill="none" stroke="#6558d8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="388" y="300" width="154" height="92" rx="8" fill="#151b26" opacity=".88"/>
+    <text x="465" y="342" fill="#f8fafc" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">MASK REGION</text>
+    <text x="465" y="366" fill="#aeb8c7" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">tap to create card</text>
+
+    <rect x="596" y="50" width="70" height="428" rx="12" fill="#d5dde5"/>
+    <circle cx="631" cy="92" r="18" fill="#6558d8"/>
+    <path d="M623 92h16M631 84v16" stroke="#fff" stroke-width="2"/>
+    <circle cx="631" cy="146" r="18" fill="#fff" stroke="#aebac6"/>
+    <path d="M624 152l14-14" stroke="#657184" stroke-width="2"/>
+    <circle cx="631" cy="200" r="18" fill="#fff" stroke="#aebac6"/>
+    <path d="M621 200h20" stroke="#657184" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(806 122)">
+    <path d="M-34 220h58" stroke="#7268e6" stroke-width="3" stroke-dasharray="7 8"/>
+    <path d="M12 210l12 10-12 10" fill="none" stroke="#7268e6" stroke-width="3"/>
+    <rect width="320" height="410" rx="28" fill="#151f31" stroke="#35445d" stroke-width="2"/>
+    <text x="28" y="50" fill="#8b82ff" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">SOURCE-LINKED CARD</text>
+    <text x="28" y="88" fill="#f1f5f9" font-family="Arial, sans-serif" font-size="24" font-weight="700">Inflammation</text>
+    <text x="28" y="116" fill="#9aabc0" font-family="Arial, sans-serif" font-size="13">Material 04 · page 18</text>
+    <rect x="28" y="146" width="264" height="156" rx="18" fill="#eef1f5"/>
+    <g stroke="#bcc6d2" stroke-width="7" stroke-linecap="round">
+      <line x1="52" y1="178" x2="264" y2="178"/>
+      <line x1="52" y1="204" x2="244" y2="204"/>
+      <line x1="52" y1="230" x2="266" y2="230"/>
+    </g>
+    <rect x="76" y="195" width="154" height="64" rx="10" fill="#151b26"/>
+    <text x="153" y="233" fill="#fff" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">REVEAL REGION</text>
+    <rect x="28" y="330" width="124" height="48" rx="24" fill="#6558d8"/>
+    <text x="90" y="360" fill="#fff" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">REVIEW</text>
+    <rect x="168" y="330" width="124" height="48" rx="24" fill="#253149"/>
+    <text x="230" y="360" fill="#cad3df" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">SOURCE</text>
+  </g>
+
+  <text x="78" y="652" fill="#8b82ff" font-family="Arial, sans-serif" font-size="15" font-weight="700">PDF → MARK → CARD → REVIEW</text>
+  <text x="1118" y="652" fill="#6f8299" font-family="Arial, sans-serif" font-size="12" text-anchor="end">Illustrative product-flow schematic</text>
+</svg>
